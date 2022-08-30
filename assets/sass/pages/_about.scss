@@ -1,0 +1,356 @@
+/*=================================================*/
+/*             About start                         */
+/*=================================================*/
+//////////////////////////////////////
+// PAGE BANNER IMAGE
+
+.page-banner-image {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  // @media only screen and (max-width: $bp-xsmall) {
+  //   background-position: left;
+  // }
+
+  &--about {
+    @media only screen and (max-width: $bp-xsmall) {
+      background-position: 58%;
+    }
+  }
+  &--corporate-training {
+    background-position: center;
+    @media only screen and (max-width: $bp-xsmall) {
+      background-position: 65%;
+    }
+  }
+  &--placement {
+    @media only screen and (max-width: $bp-xsmall) {
+      background-position: 80%;
+    }
+  }
+
+  &--courses {
+    
+    @media only screen and (max-width: $bp-xsmall) {
+      background-position: 50%;
+    }
+  }
+}
+
+/////////////////////////////////////////
+//// who we are
+.who-we-are {
+  // background: #f6f6f6;
+  background-color: #fff8f8;
+  & .vision-mission {
+    &__left-part p {
+      margin-bottom: 0;
+    }
+  }
+}
+//////////////////////////////////////
+/// Why camford
+
+.features__icon i {
+  font-size: 3rem;
+}
+
+/////////////////////////////////////
+// CEO MESSAGE
+.ceo-message {
+  padding: 8rem 0;
+  background: #fff8f8;
+
+  &__left-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 80%;
+      @media only screen and (max-width: $bp-small) {
+        width: 60%;
+      }
+    }
+  }
+
+  &__paragraph {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  &__wish {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #606060;
+  }
+
+  &__name {
+    font-weight: 800;
+    margin-top: 1rem;
+    font-size: 2.1rem;
+  }
+
+  &__sub-title {
+    color: var(--color-secondary);
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+
+  &__right-part {
+    padding: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      padding: 2rem 3rem;
+    }
+  }
+}
+
+////////////////////////////////////////
+// governing Body
+.gov-body {
+  background-color: transparent;
+  & .faculty {
+    background: transparent;
+    &__cards {
+      justify-content: center;
+      @media only screen and (max-width: $bp-xsmall) {
+        justify-content: space-between;
+        padding: 1rem;
+      }
+    }
+    &__single-card {
+      // flex: 1 0 25%;
+      background: transparent;
+      // box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      margin-top: 2rem;
+      width: 30rem;
+      &:not(:nth-child(3n)) {
+        margin-right: 7rem;
+      }
+      @media only screen and (max-width: $bp-992) {
+        &:not(:nth-child(3n)) {
+          margin-right: 0rem;
+        }
+        &:not(:nth-child(2n)) {
+          margin-right: 2.5rem;
+        }
+        width: 28rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        &:not(:nth-child(2n)) {
+          margin-right: 0;
+        }
+        &:not(:nth-child(3n)) {
+          margin-right: 2rem;
+        }
+
+        width: 27rem;
+      }
+      @media only screen and (max-width: $bp-xsmall) {
+        &:not(:nth-child(3n)) {
+          margin-right: 0rem;
+        }
+        &:not(:nth-child(2n)) {
+          margin-right: 2.5rem;
+        }
+        width: 47%;
+      }
+    }
+
+    &__content {
+      text-align: center;
+    }
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .social-link {
+        width: auto;
+      }
+    }
+
+    &__image {
+      img {
+        border-radius: 0%;
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////
+/// Managment Team
+
+.managment-team {
+  background: #fff8f8;
+}
+
+////////////////////////////////////////////
+// Administration Team
+
+.administration-team {
+  background: #fff8f8;
+}
+///////////////////////////////////////////
+/// TEAM
+
+.team {
+  // background: #f6f6f6;
+  padding: 8rem 0;
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    padding: 1rem 0rem;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 1rem 3rem;
+    }
+  }
+  &__single-box {
+    margin-bottom: 5rem;
+    align-self: stretch;
+
+    &:not(:nth-child(3n)) {
+      padding-right: 1.5rem;
+
+      @media only screen and (max-width: $bp-xsmall) {
+        padding-right: 0;
+      }
+    }
+    &:not(:nth-child(2n)) {
+      @media only screen and (max-width: $bp-small) {
+        padding-right: 1.5rem;
+      }
+      @media only screen and (max-width: $bp-xsmall) {
+        padding-right: 0;
+      }
+    }
+
+    &-content {
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      background: #fff;
+      height: 100%;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        padding: 5rem 0;
+      }
+    }
+  }
+  &__content-box {
+    padding: 0rem 0 0;
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 0;
+    }
+
+    .social-link {
+      margin-right: auto;
+    }
+  }
+
+  &__image {
+    width: 50%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem 0rem;
+    width: 100%;
+    @media only screen and (max-width: $bp-small) {
+      padding: 2rem 2rem 0rem;
+    }
+    .sub-title {
+      font-weight: 700;
+      color: #606060;
+      display: block;
+      margin-top: 0.7rem;
+      font-size: 1.6rem;
+      @media only screen and (max-width: $bp-xsmall) {
+        font-size: 1.89rem;
+      }
+    }
+    p {
+      text-align: left;
+      margin-top: 1rem;
+      @media only screen and (max-width: $bp-xsmall) {
+        padding: 0rem 3rem;
+        text-align: left;
+      }
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 0;
+      font-weight: 800;
+    }
+
+    .readMoreBtn {
+      border: none;
+      outline: none;
+      color: var(--color-secondary);
+      background: none;
+      display: inline;
+    }
+  }
+}
+
+////////////////////////////////////
+// instant-courses
+
+.instant-courses {
+  padding: 8rem 0;
+  //   background-color: #fff8f8;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0rem 0;
+  }
+
+  &-inner-area {
+    // background-color: #f9f9f9;
+    background-color: #fff8f8;
+  }
+
+  &__content {
+    padding: 8rem 4rem 8rem 7rem;
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 5rem 3rem;
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0rem 0rem 5rem;
+    }
+  }
+}
+
+/*=================================================*/
+/*             About End                         */
+/*=================================================*/

@@ -1,0 +1,140 @@
+/*=================================================*/
+/*             Contact start                         */ 
+/*=================================================*/ 
+
+
+.contact {
+  padding-bottom: 5rem;
+
+  &__left-part {
+    padding-top: 6rem;
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 1rem 4rem;
+    }
+  }
+
+  &__info {
+    padding: 4rem 0 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 1rem 0rem 3rem;
+      &:nth-child(2) {
+        padding-top: 4rem;
+      }
+    }
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 5rem 0rem 2rem;
+      &:nth-child(2) {
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  &__items {
+    position: relative;
+    padding-left: 3rem;
+
+    i {
+      position: absolute;
+      color: var(--color-secondary);
+      font-size: 1.5rem;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__sub-head {
+    font-weight: 800;
+    position: relative;
+  }
+
+  &__address {
+    max-width: 70.5rem;
+  }
+
+  &__right-part {
+    padding: 8rem 3rem 3rem;
+    position: relative;
+    @media only screen and (max-width: $bp-small) {
+      padding: 6rem 0rem 4rem 3rem;
+    }
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 4rem 2rem;
+    }
+  }
+
+  &__form-heading {
+    margin-bottom: 4rem;
+    font-size: 2.7rem;
+    font-weight: 900;
+  }
+
+  &__seperator {
+    position: absolute;
+    top: 25%;
+    left: 4.5%;
+    height: 50%;
+    @media only screen and (max-width: $bp-xsmall) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
+
+  &__map {
+    margin: 1rem auto 4rem;
+
+
+    &-item {
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 5rem;
+
+      &--2{
+        @media only screen and (max-width: $bp-xsmall) {
+          margin-top: 8rem ;
+        }
+      }
+    }
+
+    &-heading {
+      margin-bottom: 5rem;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 1.5rem;
+      font-size: 2rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        height: 4px;
+        background: var(--color-secondary);
+        width: 10rem;
+        border-radius: 5rem;
+        transform: translateX(-50%);
+      }
+    }
+    &-iframe {
+      // border: 1px solid  var(--color-secondary);
+      width: 95%;
+      box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: 0.2);
+
+      iframe {
+        width: 100%;
+        height: 40vh;
+      }
+    }
+  }
+}
+
+/*=================================================*/
+/*             Contact End                         */ 
+/*=================================================*/ 

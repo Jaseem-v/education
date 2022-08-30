@@ -1,0 +1,49 @@
+/*=================================================*/
+/*                  Table of content        
+                  --------------------
+
+   1.base
+   2.typography
+   3.navbar
+   4.header
+   5.components
+   6.footer
+   
+   pages:-
+   
+   7.home
+   8.about
+   9.course
+   10.single-courses
+   11.corporate-training
+   12.contact
+   13.form
+   14.placement
+
+   please note : each sections are sepertaed by comments where starting is
+                 mentioned as 'START' and End as 'END'
+
+*/
+/*=================================================*/
+
+@import 'components/base';
+@import 'components/typography';
+
+@import 'components/navbar';
+@import 'components/header';
+@import 'components/components';
+@import 'components/footer';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/courses';
+@import 'pages/single-course';
+@import 'pages/corporate-training';
+@import 'pages/contact';
+@import 'components/form';
+@import 'pages/placement';
+@import 'pages/cart';
+
+/*=================================================*/
+/*                      Main End                   */
+/*=================================================*/

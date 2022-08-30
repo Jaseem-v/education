@@ -1,0 +1,87 @@
+/*=================================================*/
+/*             Corporate start                         */
+/*=================================================*/
+
+.training {
+  &__info-section {
+    padding: 8rem 0 4rem;
+    @media only screen and (max-width: $bp-992) {
+      padding: 3rem 0 4rem;
+    }
+  }
+  &__img {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media only screen and (max-width: $bp-992) {
+      display: none;
+    }
+  }
+
+  &__description {
+    padding: 2rem;
+  }
+
+  &__section-2 {
+    // background: #f5f7fa;
+    padding: 4rem 0 8rem;
+    & .card {
+      &__single-box {
+        margin-top: 2rem;
+        height: 90%;
+        transition: all 0.2s;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        &:hover {
+          background-color: #fff;
+        }
+      }
+
+      &__content {
+        border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
+      }
+
+      &__title {
+        font-weight: 900;
+
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+    & .container {
+      @media only screen and (max-width: $bp-xsmall) {
+        padding: 1rem 2rem !important;
+      }
+    }
+  }
+
+  &__gallery {
+    padding: 8rem 0;
+    background-color: #f5f7fa;
+
+    &__row {
+      margin-top: 5rem;
+    }
+    & .container {
+      @media only screen and (max-width: $bp-xsmall) {
+        padding: 1rem 2rem !important;
+      }
+    }
+  }
+
+  &__video-gallery {
+    padding: 8rem 0;
+
+    &__row {
+      margin-top: 5rem;
+    }
+  }
+}
+
+/*=================================================*/
+/*             Corporate End                         */
+/*=================================================*/

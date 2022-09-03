@@ -4,7 +4,7 @@
 "use script";
 
 
-$('.owl-carousel').owlCarousel({
+$('.header-carousel').owlCarousel({
     loop: true,
     margin: 10,
     dots: false,
@@ -21,6 +21,27 @@ $('.owl-carousel').owlCarousel({
         },
         1000: {
             items: 1
+        }
+    }
+});
+
+$('.courses-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: false,
+    nav: false,
+    mouseDrag: true,
+    autoplay: true,
+    animateOut: 'fadeOut',
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
         }
     }
 });
@@ -47,13 +68,13 @@ $('.popup-youtube ').magnificPopup({
             youtube: {
                 index: 'youtube.com/',
 
-                id: 'v=', 
+                id: 'v=',
 
-                src: '//www.youtube.com/embed/%id%?autoplay=1' 
+                src: '//www.youtube.com/embed/%id%?autoplay=1'
             }
         },
 
-        srcAction: 'iframe_src', 
+        srcAction: 'iframe_src',
     }
 
 
@@ -76,21 +97,28 @@ $('.single-gallery-item .popup-btn').magnificPopup({
 
 
 // ------------mobile-menu----//
-const openBtn = document.querySelector(".open-btn")
+const openBtn = document.querySelector("#hamburger-1")
+const closeBtn = document.querySelector("#hamburger-2")
 const nav_list = document.querySelector(".navigation__list")
 const overlay = document.querySelector(".overlay")
 const navContact = document.querySelector(".nav-contact")
+overlay.classList.add("hidden")
 
 function mobileMenu() {
-    openBtn.classList.toggle("active");
-    nav_list.classList.toggle("active")
-    overlay.classList.toggle("hidden")
-    navContact.classList.toggle("hidden")
+    openBtn.classList.add("active");
+    nav_list.classList.add("active")
+    overlay.classList.remove("hidden")
+}
+function mobileMenuClose() {
+    openBtn.classList.remove("active");
+    nav_list.classList.remove("active")
+    overlay.classList.add("hidden")
 }
 
-openBtn.addEventListener("click", mobileMenu)
-overlay.addEventListener("click", mobileMenu)
 
+openBtn.addEventListener("click", mobileMenu)
+closeBtn.addEventListener("click", mobileMenuClose)
+overlay.addEventListener("click", mobileMenuClose)
 // -----xx-------mobile-menu--xx--//
 
 $(window).on('scroll', function () {
@@ -157,3 +185,15 @@ function toggleReadMore(key) {
         moreText.css('display', 'inline');
     }
 }
+
+
+$('input').focus(function () {
+    $(this).parent().addClass('active');
+    $('input').focusout(function () {
+        if ($(this).val() == '') {
+            $(this).parent().removeClass('active');
+        } else {
+            $(this).parent().addClass('active');
+        }
+    })
+});

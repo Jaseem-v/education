@@ -20,20 +20,8 @@
     z-index: 0;
     overflow: hidden;
     text-align: center;
-    height: 25rem;
+    box-shadow: 0px 20px 30px rgba(24, 44, 74, 0.05);
 
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      border-radius: 0.5rem;
-      background-color: var(--color-primary);
-      opacity: 0.67;
-      z-index: 1;
-    }
 
     &:hover {
       img {
@@ -50,30 +38,29 @@
   }
 
   &__content {
-    position: absolute;
-    left: 0;
-    right: 0;
+    position: relative;
     height: auto;
     z-index: 2;
     top: 50%;
-    transform: translateY(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
 
     h3 {
       margin-bottom: 0.8rem;
-      color: #fff;
+      color: #141517;
       font-size: 1.6rem;
       font-weight: 800;
       line-height: 1.5;
       text-transform: uppercase;
       padding: 1rem;
+      margin-top: 2rem;
 
       @media only screen and (max-width: $bp-small) {
         font-size: 1.8rem;
         max-width: 32vw;
       }
+
       @media only screen and (max-width: $bp-xsmall) {
         font-size: 2rem;
         padding: 1rem 1rem;
@@ -107,6 +94,7 @@
 
 .features {
   padding: 8rem 1rem;
+
   &__box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -120,6 +108,7 @@
       padding: 1rem 2rem;
     }
   }
+
   &__single-features {
     // background-color: #fff;
     height: 90%;
@@ -180,16 +169,20 @@
       margin-bottom: 3rem;
     }
   }
+
   &__image {
     position: relative;
     height: 100%;
+
     @media only screen and (max-width: $bp-xsmall) {
       display: none;
     }
+
     img {
       width: 100%;
       height: 100%;
     }
+
     &::before {
       content: '';
       position: absolute;
@@ -208,6 +201,7 @@
     display: none;
     width: 100%;
     height: 30vh;
+
     @media only screen and (max-width: $bp-xsmall) {
       display: block;
     }
@@ -219,7 +213,6 @@
 
 .funfacts {
   padding: 8rem 1rem;
-  background-color: #f5f7fa;
 
   &__item {
     padding: 3rem;
@@ -228,6 +221,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+
     @media only screen and (max-width: $bp-xsmall) {
       width: 50%;
     }
@@ -267,17 +261,21 @@
       grid-template-rows: repeat(6, 1fr);
     }
   }
+
   &__img {
     padding: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
     @media only screen and (max-width: $bp-xsmall) {
       padding: 2rem;
     }
   }
+
   img {
     width: 70%;
+
     // margin-bottom: 2rem;
     @media only screen and (max-width: $bp-xsmall) {
       width: 80%;
@@ -291,9 +289,11 @@
   padding: 8rem 0;
   background-color: #fff8f8;
   position: relative;
+
   &__swiper {
     overflow: hidden;
     padding: 0.5rem;
+
     @media only screen and (max-width: $bp-xsmall) {
       padding: 2rem;
     }
@@ -331,8 +331,9 @@
     }
   }
 }
+
 .review {
-  margin-top: 3rem;
+  // margin-top: 3rem;
   padding: 3rem;
   position: relative;
   overflow: hidden;
@@ -352,9 +353,11 @@
   @media only screen and (max-width: $bp-small) {
     height: 37rem;
   }
+
   @media only screen and (max-width: $bp-xsmall) {
     height: auto;
   }
+
   // @media only screen and (max-width: $bp-340) {
   //   // height: 40rem;
   // }
@@ -417,6 +420,7 @@
     }
   }
 }
+
 ////////////////////////////////////////
 // GALLERY
 
@@ -434,6 +438,7 @@
       border-radius: 0.5rem;
       transition: 0.5s;
     }
+
     &:hover {
       img {
         transform: scale3d(1.2, 1.2, 1.2);
@@ -469,6 +474,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+
   @media only screen and (max-width: $bp-xsmall) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -476,7 +482,7 @@
   }
 
   &__content {
-    margin-top: 2rem;
+    // margin-top: 2rem;
     background: #f1f1f2;
     padding: 3rem;
   }
@@ -550,6 +556,7 @@
         margin-right: 0rem;
       }
     }
+
     @media only screen and (max-width: $bp-xsmall) {
       width: 45%;
       margin-right: 0rem;
@@ -562,15 +569,18 @@
     justify-content: center;
     align-items: center;
     justify-self: stretch;
+
     @media only screen and (max-width: $bp-xsmall) {
       align-items: flex-end;
     }
+
     img {
       width: 100%;
       height: 100%;
       border-radius: 4%;
     }
   }
+
   &__content {
     padding: 2rem 0.5rem;
     text-align: left;
@@ -582,9 +592,11 @@
   &__name {
     font-weight: 800;
     font-size: 1.7rem;
+
     @media only screen and (max-width: $bp-xsmall) {
       font-size: 1.55rem;
     }
+
     @media only screen and (max-width: $bp-380) {
       font-size: 1.4rem;
     }
@@ -594,14 +606,17 @@
     font-weight: 600;
     color: var(--color-secondary);
     font-size: 1.6rem;
+
     @media only screen and (max-width: $bp-xsmall) {
       font-size: 1.45rem;
     }
   }
+
   &__place {
     font-weight: 600;
     font-size: 1.4rem;
     color: #6a6a6a;
+
     @media only screen and (max-width: $bp-xsmall) {
       font-size: 1.35rem;
     }
@@ -629,6 +644,71 @@
 .recruitment {
   background-color: #fff;
 }
+
 /*=================================================*/
 /*             Home-page  End                   */
 /*=================================================*/
+
+/*=================================================*/
+/*                  Blog                           */
+/*=================================================*/
+.blog {
+  &__img {
+    position: relative;
+    border-radius: 0px;
+    // margin-bottom: 3rem;
+    grid-row: 1/2;
+    width: 100%;
+    z-index: 0;
+    grid-column: 1/3;
+  }
+
+  &__single-item {
+    position: relative;
+    box-shadow: 0 0 20px 0 #dddddd82;
+    border-radius: 16px;
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+    overflow: hidden;
+  }
+
+  &__date {
+    padding: 0.8rem 1.5rem;
+    border-radius: 7px;
+    grid-row: 1/2;
+    z-index: 2;
+    justify-self: flex-end;
+    align-self: flex-end;
+    grid-column: 1/3;
+    transform: translate(-2rem, 2rem);
+    background: var(--color-teritiary);
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  &__details {
+    padding: 3rem;
+    grid-row: 2/3;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+
+  &__btn {
+    font-size: 1.6rem;
+    color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-secondary);
+    padding: 3px 0;
+    transition: all 0.2s;
+    font-weight: 500;
+    line-height: 1.6;
+
+    &:hover {
+      border-bottom: 1px solid #000;
+    }
+  }
+}

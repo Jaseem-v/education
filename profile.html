@@ -107,7 +107,7 @@
 
     <!-- --section--  -->
     <!-- ----gallery----------- -->
-    <section class="profile">
+    <section class="profile section-padding">
         <div class="container">
             <!-- <div class="section-heading">
                 <div class="heading-title">
@@ -117,46 +117,448 @@
                 </div>
             </div> -->
 
+
             <div class="tile profile__tile" id="tabs">
                 <!-- Nav tabs -->
-                <ul class="nav nav-tabs nav-justified" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="workshop-tab" data-toggle="tab" href="#workshop" role="tab"
-                            aria-controls="workshop" aria-selected="false"><i class="	fas fa-id-badge"></i>
-                            Work
-                            shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="media-tab" data-toggle="tab" href="#media" role="tab"
-                            aria-controls="media" aria-selected="false"><i class="fas fa-film"></i> Media
-                        </a>
-                    </li>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile__side-area">
+                            <div class="profile__user">
+                                <div class="row align-items-center ">
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                                            alt="user" class="profile__user-img">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="profile__user-content">
+                                            <h2 class="profile__user-name">
+                                                Neymar JR
+                                            </h2>
+                                            <h6 class="profile__user-contact">
+                                                <i class="fa fa-phone"></i>
+                                                +91 12345 67891
+                                            </h6>
+                                            <h6 class="profile__user-contact">
+                                                <i class="fa fa-envelope"></i>
+                                                abc@gmail.com
+                                            </h6>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <ul class="nav nav-tabs nav-justified" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="workshop-tab" data-toggle="tab" href="#workshop"
+                                        role="tab" aria-controls="workshop" aria-selected="false"><i
+                                            class="	fas fa-user"></i>
+                                        Personal Info</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="media-tab" data-toggle="tab" href="#media" role="tab"
+                                        aria-controls="media" aria-selected="false"><i class="fas fa-film"></i> Password
+                                        & Security
+                                    </a>
+                                </li>
 
 
-                    <li class="nav-item">
-                        <a class="nav-link " id="image-tab" data-toggle="tab" href="#image" role="tab"
-                            aria-controls="image" aria-selected="true"><i class="fas fa-images"></i>
-                            Images</a>
-                    </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " id="course-tab" data-toggle="tab" href="#course" role="tab"
+                                        aria-controls="course" aria-selected="true"><i class="fa fa-book"></i>
+                                        My Courses
+                                    </a>
+                                </li>
 
-                </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link " id="ref-course-tab" data-toggle="tab" href="#ref-course"
+                                        role="tab" aria-controls="ref-course" aria-selected="true"><i
+                                            class="fa fa-book"></i>
+                                        Refered Courses
+                                    </a>
+                                </li>
 
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="workshop" role="tabpanel" aria-labelledby="workshop-tab">
-                        hi
+                                <li class="nav-item">
+                                    <a class="nav-link " id="image-tab" data-toggle="tab" href="#image" role="tab"
+                                        aria-controls="image" aria-selected="true"><i class="fa fa-sign-out-alt"></i>
+                                        Log Out
+                                    </a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
                     </div>
+                    <div class="col-md-8">
+                        <div class="profile__main-area">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="workshop" role="tabpanel"
+                                    aria-labelledby="workshop-tab">
+                                    <div class="profile__user-card">
+                                        <h2 class="heading--side">Personal Info</h2>
+                                        <div class="dez-separator style-skew mb-5"></div>
 
-                    <div class="tab-pane fade" id="media" role="tabpanel" aria-labelledby="media-tab">
+                                        <form action="" class="profile__form">
+                                            <div class="profile__form-group">
+                                                <label for="fname" name="fullName">Full name</label>
+                                                <h6 class="profile__form-value">Naymer JR</h6>
+                                                <!-- <input type="text" id="fname" value="Naymer JR"> -->
+                                            </div>
+                                            <div class="profile__form-group">
+                                                <label for="fname" name="fullName">Email</label>
+                                                <h6 class="profile__form-value">abc@gmail.com</h6>
+                                                <!-- <input type="text" id="fname" value="Naymer JR"> -->
+                                            </div>
+                                            <div class="profile__form-group">
+                                                <label for="fname" name="fullName">Phone Number</label>
+                                                <h6 class="profile__form-value">+91 12345 67891</h6>
+                                                <!-- <input type="text" id="fname" value="Naymer JR"> -->
+                                            </div>
+                                            <div class="profile__form-group">
+                                                <label for="fname" name="fullName">Address</label>
+                                                <h6 class="profile__form-value">Not Specified</h6>
+                                                <!-- <input type="text" id="fname" value="Naymer JR"> -->
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
 
+                                <div class="tab-pane fade" id="media" role="tabpanel" aria-labelledby="media-tab">
+                                    <form action="" class="profile__form">
+                                        <h2 class="heading--side">Password & Security</h2>
+                                        <div class="dez-separator style-skew mb-5"></div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="profile__form-group">
+                                                    <label for="fname" name="fullName">Current Password</label>
+                                                    <!-- <h6 class="profile__form-value">Not Specified</h6> -->
+                                                    <input type="text" id="fname" placeholder="Enter your Password">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="profile__form-group">
+                                                    <label for="fname" name="fullName">New password</label>
+                                                    <!-- <h6 class="profile__form-value">Not Specified</h6> -->
+                                                    <input type="text" id="fname" placeholder="Enter your New password">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="profile__form-group">
+                                                    <label for="fname" name="fullName">Confirm password</label>
+                                                    <!-- <h6 class="profile__form-value">Not Specified</h6> -->
+                                                    <input type="text" id="fname"
+                                                        placeholder="Enter your Confirm password">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" profile__form-group mt-5 pl-5">
+                                            <a href="login.html" class=" btn btn--contact">
+                                                Save
+                                                <span></span>
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade " id="course" role="tabpanel" aria-labelledby="course-tab">
+                                    <div class="row">
+                                        <!-- -----single-courses -->
+                                        <div class="col-lg-6 col-md-6">
+
+
+                                            <div class="card__single-box">
+                                                <div class="card__image">
+                                                    <a href="course-single.html">
+                                                        <img src="assets/img/web.jpg" alt="course1">
+                                                    </a>
+                                                </div>
+                                                <div class="card__content">
+
+
+                                                    <a href="course-single.html">
+                                                        <h3 class="card__title">
+                                                            Web Development
+
+                                                        </h3>
+                                                    </a>
+
+                                                    <p class="paragraph--secondary">Lorem ipsum dolor sit, amet
+                                                        consectetur adipisicing
+                                                        elit. Sit voluptatem ...
+                                                        <!-- -->...
+                                                    </p>
+
+                                                    <div class="d-flex align-items-center gap-3 mt-3 mb-0">
+                                                        <h3 class="card__download-brochure card__price">
+                                                            Rs 499
+                                                        </h3>
+                                                        <h3
+                                                            class="card__download-brochure card__price card__price--strike">
+                                                            Rs 1500
+                                                        </h3>
+                                                    </div>
+
+
+                                                    <a href="cart.html" class=" btn btn--training  mt-3 w-100">
+                                                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- -----single-courses -->
+                                        <div class="col-lg-6 col-md-6">
+
+
+                                            <div class="card__single-box">
+                                                <div class="card__image">
+                                                    <a href="course-single.html">
+                                                        <img src="assets/img/web.jpg" alt="course1">
+                                                    </a>
+                                                </div>
+                                                <div class="card__content">
+
+
+                                                    <a href="course-single.html">
+                                                        <h3 class="card__title">
+                                                            Web Development
+
+                                                        </h3>
+                                                    </a>
+
+                                                    <p class="paragraph--secondary">Lorem ipsum dolor sit, amet
+                                                        consectetur adipisicing
+                                                        elit. Sit voluptatem ...
+                                                        <!-- -->...
+                                                    </p>
+
+                                                    <div class="d-flex align-items-center gap-3 mt-3 mb-0">
+                                                        <h3 class="card__download-brochure card__price">
+                                                            Rs 499
+                                                        </h3>
+                                                        <h3
+                                                            class="card__download-brochure card__price card__price--strike">
+                                                            Rs 1500
+                                                        </h3>
+                                                    </div>
+
+
+                                                    <a href="cart.html" class=" btn btn--training  mt-3 w-100">
+                                                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- -----single-courses -->
+                                        <div class="col-lg-6 col-md-6">
+
+
+                                            <div class="card__single-box">
+                                                <div class="card__image">
+                                                    <a href="course-single.html">
+                                                        <img src="assets/img/web.jpg" alt="course1">
+                                                    </a>
+                                                </div>
+                                                <div class="card__content">
+
+
+                                                    <a href="course-single.html">
+                                                        <h3 class="card__title">
+                                                            Web Development
+
+                                                        </h3>
+                                                    </a>
+
+                                                    <p class="paragraph--secondary">Lorem ipsum dolor sit, amet
+                                                        consectetur adipisicing
+                                                        elit. Sit voluptatem ...
+                                                        <!-- -->...
+                                                    </p>
+
+                                                    <div class="d-flex align-items-center gap-3 mt-3 mb-0">
+                                                        <h3 class="card__download-brochure card__price">
+                                                            Rs 499
+                                                        </h3>
+                                                        <h3
+                                                            class="card__download-brochure card__price card__price--strike">
+                                                            Rs 1500
+                                                        </h3>
+                                                    </div>
+
+
+                                                    <a href="cart.html" class=" btn btn--training  mt-3 w-100">
+                                                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade " id="ref-course" role="tabpanel"
+                                    aria-labelledby="ref-course-tab">
+                                    <div class="row">
+                                        <!-- -----single-courses -->
+                                        <div class="col-lg-6 col-md-6">
+
+
+                                            <div class="card__single-box">
+                                                <div class="card__image">
+                                                    <a href="course-single.html">
+                                                        <img src="assets/img/web.jpg" alt="course1">
+                                                    </a>
+                                                </div>
+                                                <div class="card__content">
+
+
+                                                    <a href="course-single.html">
+                                                        <h3 class="card__title">
+                                                            Web Development
+
+                                                        </h3>
+                                                    </a>
+
+                                                    <p class="paragraph--secondary">Lorem ipsum dolor sit, amet
+                                                        consectetur adipisicing
+                                                        elit. Sit voluptatem ...
+                                                        <!-- -->...
+                                                    </p>
+
+                                                    <div class="d-flex align-items-center gap-3 mt-3 mb-0">
+                                                        <h3 class="card__download-brochure card__price">
+                                                            Rs 499
+                                                        </h3>
+                                                        <h3
+                                                            class="card__download-brochure card__price card__price--strike">
+                                                            Rs 1500
+                                                        </h3>
+                                                    </div>
+
+
+                                                    <a href="cart.html" class=" btn btn--training  mt-3 w-100">
+                                                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- -----single-courses -->
+                                        <div class="col-lg-6 col-md-6">
+
+
+                                            <div class="card__single-box">
+                                                <div class="card__image">
+                                                    <a href="course-single.html">
+                                                        <img src="assets/img/web.jpg" alt="course1">
+                                                    </a>
+                                                </div>
+                                                <div class="card__content">
+
+
+                                                    <a href="course-single.html">
+                                                        <h3 class="card__title">
+                                                            Web Development
+
+                                                        </h3>
+                                                    </a>
+
+                                                    <p class="paragraph--secondary">Lorem ipsum dolor sit, amet
+                                                        consectetur adipisicing
+                                                        elit. Sit voluptatem ...
+                                                        <!-- -->...
+                                                    </p>
+
+                                                    <div class="d-flex align-items-center gap-3 mt-3 mb-0">
+                                                        <h3 class="card__download-brochure card__price">
+                                                            Rs 499
+                                                        </h3>
+                                                        <h3
+                                                            class="card__download-brochure card__price card__price--strike">
+                                                            Rs 1500
+                                                        </h3>
+                                                    </div>
+
+
+                                                    <a href="cart.html" class=" btn btn--training  mt-3 w-100">
+                                                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- -----single-courses -->
+                                        <div class="col-lg-6 col-md-6">
+
+
+                                            <div class="card__single-box">
+                                                <div class="card__image">
+                                                    <a href="course-single.html">
+                                                        <img src="assets/img/web.jpg" alt="course1">
+                                                    </a>
+                                                </div>
+                                                <div class="card__content">
+
+
+                                                    <a href="course-single.html">
+                                                        <h3 class="card__title">
+                                                            Web Development
+
+                                                        </h3>
+                                                    </a>
+
+                                                    <p class="paragraph--secondary">Lorem ipsum dolor sit, amet
+                                                        consectetur adipisicing
+                                                        elit. Sit voluptatem ...
+                                                        <!-- -->...
+                                                    </p>
+
+                                                    <div class="d-flex align-items-center gap-3 mt-3 mb-0">
+                                                        <h3 class="card__download-brochure card__price">
+                                                            Rs 499
+                                                        </h3>
+                                                        <h3
+                                                            class="card__download-brochure card__price card__price--strike">
+                                                            Rs 1500
+                                                        </h3>
+                                                    </div>
+
+
+                                                    <a href="cart.html" class=" btn btn--training  mt-3 w-100">
+                                                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                                                        <span></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade " id="image" role="tabpanel" aria-labelledby="image-tab">
-
-                    </div>
-
                 </div>
-
             </div>
+
         </div>
     </section>
     <!-- --xxx--gallery---xx-------- -->

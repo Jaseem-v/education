@@ -170,6 +170,36 @@
         }
     }
 
+    &__coupon {
+        color: #444444;
+        background: linear-gradient(315deg, rgba(0, 0, 0, 0.06) 10%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.06) 40%, rgba(0, 0, 0, 0.06) 60%, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.06) 90%) repeat scroll 0 0/6px 6px rgba(0, 0, 0, 0);
+        text-align: right;
+        padding: 1rem 2rem;
+        font-size: 20px;
+        border: 2px solid #DDDDDD;
+        position: relative;
+        text-align: center;
+        width: 50%;
+
+        &-div {
+            display: flex;
+            // align-items: center;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__count {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &-title {
+            color: var(--color-secondary);
+            font-size: 1.7rem;
+            font-weight: 700;
+
+        }
+    }
+
 
 
 

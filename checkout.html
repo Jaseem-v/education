@@ -80,7 +80,7 @@
                         </span>
                     </a>
                 </li>
-                <li class="navigation__items ">
+                <li class="navigation__items d-none">
                     <a href="contact.html" class="navigation__link">
                         <i class="fa fa-bell"></i>
                         <span class="navigation__cart-count">
@@ -146,7 +146,7 @@
                                         <div class="col-md-6">
                                             <div class="checkout__form-group">
                                                 <div class="checkout__label">
-                                                    <label for="country">Country</label>
+                                                    <label class="checkout__label-text" for="country">Country</label>
                                                     <h6 class="checkout__form-required">Required</h6>
                                                 </div>
                                                 <select name="country" id="country" class="checkout__select">
@@ -158,7 +158,7 @@
                                         <div class="col-md-6">
                                             <div class="checkout__form-group">
                                                 <div class="checkout__label">
-                                                    <label for="country">State</label>
+                                                    <label class="checkout__label-text" for="country">State</label>
                                                     <h6 class="checkout__form-required">Required</h6>
                                                 </div>
                                                 <select name="country" id="country" class="checkout__select">
@@ -204,10 +204,84 @@
 
                                     <div class="checkout__payment">
 
+                                        <ul class="checkout__payment-list">
+                                            <li class="checkout__payment-items">
+                                                <label for="credit-card"
+                                                    class="checkout__payment-head checkout__label-text">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <input type="radio" name="credit-card" id="credit-card">
+                                                        <img src="assets/img/payment/card-default.svg"
+                                                            alt="debit-card.svg" class="checkout__payment-img">
+                                                        Credit / Debit Card
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-1">
+                                                        <img src="assets/img/payment/card-mastercard.svg"
+                                                            alt="debit-card.svg" class="checkout__payment-img">
+
+                                                        <img src="assets/img/payment/card-visa.svg" alt="debit-card.svg"
+                                                            class="checkout__payment-img">
+                                                        <img src="assets/img/payment/card-discover.svg"
+                                                            alt="debit-card.svg" class="checkout__payment-img">
+
+                                                        <img src="assets/img/payment/card-dinersclub.svg"
+                                                            alt="debit-card.svg" class="checkout__payment-img">
+                                                        <img src="assets/img/payment/card-amex.svg" alt="debit-card.svg"
+                                                            class="checkout__payment-img">
+
+
+                                                        <img src="assets/img/payment/card-rupay.svg"
+                                                            alt="debit-card.svg" class="checkout__payment-img">
+
+                                                    </ul>
+                                                </label>
+                                            </li>
+                                            <li class="checkout__payment-items">
+                                                <label for="upi" class="checkout__payment-head checkout__label-text">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <input type="radio" name="upi" id="upi">
+                                                        <img src="assets/img/payment/upi.svg" alt="debit-card.svg"
+                                                            class="checkout__payment-img">
+                                                        UPI
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="checkout__payment-items">
+                                                <label for="paytm" class="checkout__payment-head checkout__label-text">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <input type="radio" name="paytm" id="paytm">
+                                                        <img src="assets/img/payment/paytm.svg" alt="debit-card.svg"
+                                                            class="checkout__payment-img">
+                                                        PayTM
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="checkout__payment-items">
+                                                <label for="netbanking"
+                                                    class="checkout__payment-head checkout__label-text">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <input type="radio" name="netbanking" id="netbanking">
+                                                        <img src="assets/img/payment/net.svg" alt="debit-card.svg"
+                                                            class="checkout__payment-img">
+                                                        Net Banking
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="checkout__payment-items">
+                                                <label for="wallet" class="checkout__payment-head checkout__label-text">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <input type="radio" name="wallet" id="wallet">
+                                                        <img src="assets/img/payment/wallet.svg" alt="debit-card.svg"
+                                                            class="checkout__payment-img">
+                                                        Mobile Wallets
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+
 
                                     </div>
 
-                                    
+
                                     <h1 class="checkout__title">
                                         Summary
                                     </h1>

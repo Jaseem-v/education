@@ -197,3 +197,28 @@ $('input').focus(function () {
         }
     })
 });
+
+/////////////////////////////////////
+/// payemnt 
+
+const paymentInput = document.querySelectorAll(".checkout__payment-head input")
+const paymentLabel = document.querySelectorAll(".checkout__payment-head")
+
+// paymentInput.forEach(el => {
+//     el.addEventListener("click", (e) => {
+//         e.preventDefault()
+//     })
+// })
+
+paymentLabel.forEach(el => {
+    el.addEventListener("click", (e) => {
+        const label = e.target.closest(".checkout__payment-head")
+        paymentInput.forEach(el => {
+            el.checked = false
+            if (label.getAttribute("for") == el.getAttribute("id")) {
+                el.checked = true
+            }
+        })
+
+    })
+})

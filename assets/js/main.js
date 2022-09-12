@@ -1,7 +1,33 @@
+"use script";
+
+////////////////////////////////
+// user nav
+const userProfileBtn = document.querySelector(".user-mobile");
+const userProfilClose = document.querySelector(".user-mobile--close");
+const userProfileLinks = document.querySelectorAll(".user-mobile--links");
+if (userProfileBtn) {
+    userProfileBtn.addEventListener("click", () => {
+        userProfileLinks.forEach(el => {
+            el.classList.toggle("d-none")
+        }
+
+        )
+        userProfileBtn.classList.toggle("d-none")
+    })
+
+    userProfilClose.addEventListener("click", () => {
+        userProfileLinks.forEach(el => {
+            el.classList.toggle("d-none")
+        }
+
+        )
+        userProfileBtn.classList.toggle("d-none")
+    })
+}
+
 //////////////////////////
 ///BANNER SWIPER
 
-"use script";
 
 
 $('.header-carousel').owlCarousel({

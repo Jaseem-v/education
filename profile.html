@@ -41,7 +41,7 @@
 </head>
 
 <body>
-   <!-- ---------nav-bar---------- -->
+    <!-- ---------nav-bar---------- -->
     <nav class="navigation " id="navbar">
         <div class="container navigation__content">
             <div class="overlay hidden"></div>
@@ -183,6 +183,13 @@
                                         Refer Courses
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " id="notification-tab" data-toggle="tab" href="#notification"
+                                        role="tab" aria-controls="notification" aria-selected="true"><i
+                                            class="fa fa-bell"></i>
+                                        Notification
+                                    </a>
+                                </li>
 
                                 <li class="nav-item">
                                     <a class="nav-link " id="image-tab" data-toggle="tab" href="#image" role="tab"
@@ -236,26 +243,25 @@
                                         <h2 class="heading--side">Password & Security</h2>
                                         <div class="dez-separator style-skew mb-5"></div>
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="profile__form-group">
-                                                    <label for="fname" name="fullName">Current Password</label>
-                                                    <!-- <h6 class="profile__form-value">Not Specified</h6> -->
-                                                    <input type="text" id="fname" placeholder="Enter your Password">
+                                            <div class="col-12 p-0">
+                                                <div class="col-md-6">
+                                                    <div class="profile__form-group profile__form-group--border">
+                                                        <label for="fname" name="fullName">Current Password</label>
+                                                        <!-- <h6 class="profile__form-value">Not Specified</h6> -->
+                                                        <input type="text" id="fname" placeholder="Enter your Password">
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-
-                                            </div>
 
                                             <div class="col-md-6">
-                                                <div class="profile__form-group">
+                                                <div class="profile__form-group profile__form-group--border">
                                                     <label for="fname" name="fullName">New password</label>
                                                     <!-- <h6 class="profile__form-value">Not Specified</h6> -->
                                                     <input type="text" id="fname" placeholder="Enter your New password">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="profile__form-group">
+                                                <div class="profile__form-group profile__form-group--border">
                                                     <label for="fname" name="fullName">Confirm password</label>
                                                     <!-- <h6 class="profile__form-value">Not Specified</h6> -->
                                                     <input type="text" id="fname"
@@ -263,7 +269,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class=" profile__form-group mt-5 pl-5">
+                                        <div class=" profile__form-group mt-5 pl-5 profile__form-group--border">
                                             <a href="login.html" class=" btn btn--contact">
                                                 Save
                                                 <span></span>
@@ -586,6 +592,11 @@
                                         </div>
 
                                     </div>
+                                </div>
+                                <div class="tab-pane fade " id="notification" role="tabpanel"
+                                    aria-labelledby="notification-tab">
+                                    <h2 class="heading--side">Notifications</h2>
+                                    <div class="dez-separator style-skew mb-5"></div>
                                 </div>
 
                             </div>

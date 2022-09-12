@@ -41,7 +41,7 @@
 </head>
 
 <body>
-   <!-- ---------nav-bar---------- -->
+    <!-- ---------nav-bar---------- -->
     <nav class="navigation " id="navbar">
         <div class="container navigation__content">
             <div class="overlay hidden"></div>
@@ -80,17 +80,47 @@
                         </span>
                     </a>
                 </li>
-                <li class="navigation__items ">
+                <!-- <li class="navigation__items ">
                     <a href="contact.html" class="navigation__link">
                         <i class="fa fa-bell"></i>
                         <span class="navigation__cart-count">
                             2
                         </span>
                     </a>
-                </li>
-                <li class="navigation__items">
+                </li> -->
+
+                <li class="navigation__sub-menu-li  user-mobile--links d-none m-0">
                     <a href="profile.html" class="navigation__link">
-                        <i class="fa fa-user"></i>
+                        <i class="far fa-address-card"></i> My Profile
+                    </a>
+                </li>
+                <li class="navigation__sub-menu-li  user-mobile--links d-none m-0">
+                    <a href="#/" class="navigation__link">
+                        <i class="bi bi-box-arrow-left"></i> Logout
+                    </a>
+                </li>
+                <li class="navigation__sub-menu-li  user-mobile--links user-mobile--close d-none m-0">
+                    <a href="#/" class="navigation__link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </li>
+                <li class="navigation__items user-mobile">
+                    <a href="#/" class="navigation__link">
+                        <i class="fa fa-user"></i> John
+
+                        <ul class="navigation__sub-menu">
+                            <li class="navigation__sub-menu-li">
+                                <a href="profile.html" class="navigation__link">
+                                    <i class="far fa-address-card"></i> My Profile
+                                </a>
+                            </li>
+                            <li class="navigation__sub-menu-li">
+                                <a href="#/" class="navigation__link">
+                                    <i class="bi bi-box-arrow-left"></i> Logout
+                                </a>
+                            </li>
+
+                        </ul>
                     </a>
                 </li>
                 <a href="login.html" class=" btn btn--contact d-none">
@@ -386,7 +416,7 @@
     <!-- --xx------training-program---xx------- -->
 
 
-<!-- -----footer------- -->
+    <!-- -----footer------- -->
     <footer class="footer">
         <div class="container">
 

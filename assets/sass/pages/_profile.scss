@@ -146,6 +146,11 @@
 
             border-bottom: 1px solid #efecf3;
 
+            &--border {
+                border-bottom: none;
+
+            }
+
             label {
                 font-size: 2rem;
                 color: #1f1b2d;
@@ -192,6 +197,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+
         &-title {
             color: var(--color-secondary);
             font-size: 1.7rem;

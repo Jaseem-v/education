@@ -5,25 +5,32 @@
 const userProfileBtn = document.querySelector(".user-mobile");
 const userProfilClose = document.querySelector(".user-mobile--close");
 const userProfileLinks = document.querySelectorAll(".user-mobile--links");
-if (userProfileBtn) {
-    userProfileBtn.addEventListener("click", () => {
-        userProfileLinks.forEach(el => {
-            el.classList.toggle("d-none")
-        }
 
-        )
-        userProfileBtn.classList.toggle("d-none")
-    })
+let x = window.matchMedia("(max-width: 700px)")
 
-    userProfilClose.addEventListener("click", () => {
-        userProfileLinks.forEach(el => {
-            el.classList.toggle("d-none")
-        }
+if (x.matches) {
 
-        )
-        userProfileBtn.classList.toggle("d-none")
-    })
+    if (userProfileBtn) {
+        userProfileBtn.addEventListener("click", () => {
+            userProfileLinks.forEach(el => {
+                el.classList.toggle("d-none")
+            }
+
+            )
+            userProfileBtn.classList.toggle("d-none")
+        })
+
+        userProfilClose.addEventListener("click", () => {
+            userProfileLinks.forEach(el => {
+                el.classList.toggle("d-none")
+            }
+
+            )
+            userProfileBtn.classList.toggle("d-none")
+        })
+    }
 }
+
 
 //////////////////////////
 ///BANNER SWIPER
